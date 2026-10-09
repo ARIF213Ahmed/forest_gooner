@@ -1,0 +1,1 @@
+Place your forest, ground, bush, hunter, caveman and hunter-hit GIF/image files in this folder. Then set their relative paths in ../../asset-config.js. See the main README.md.

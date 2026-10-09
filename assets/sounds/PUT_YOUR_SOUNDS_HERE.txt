@@ -1,0 +1,1 @@
+Place gunshot, caveman scream, hunter hit and caveman death sound files in this folder. Then set their relative paths in ../../asset-config.js. See the main README.md.

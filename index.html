@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>forest_gooner</title>
+    
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍌</text></svg>"
+    />
+   
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hud">
+        <div class="brand">FOREST <span>Gooner</span></div>
+        <div class="stat">SCORE <b id="score">000000</b></div>
+        <div class="stat">LIVES <b id="lives">♥ ♥ ♥ ♥ ♥</b></div>
+        <div class="stat">DISTANCE <b id="distance">0 m</b></div>
+        <button id="pauseBtn" type="button">PAUSE</button>
+      </header>
+      <section class="game-wrap">
+        <canvas
+          id="game"
+          width="960"
+          height="540"
+          aria-label="Forest Hunter game"
+        ></canvas>
+        <div class="overlay" id="startOverlay">
+          <div class="panel">
+            <!-- <p class="eyebrow">A SMALL RETRO SURVIVAL PROTOTYPE</p> -->
+            <h1>FOREST Gooner</h1>
+            <!-- <p>Move through the clearing. Listen for the bushes.</p> -->
+            <button id="startBtn" type="button">START GAME</button>
+            <small>WASD move · Mouse aim · Right-click shoot · P pause</small>
+          </div>
+        </div>
+        <div class="overlay hidden" id="endOverlay">
+          <div class="panel">
+            <p class="eyebrow">RUN COMPLETE</p>
+            <h2 id="endTitle">YOU WERE CAUGHT</h2>
+            <p>Final score: <strong id="finalScore">0</strong></p>
+            <button id="restartBtn" type="button">TRY AGAIN</button>
+          </div>
+        </div>
+        <div class="toast" id="toast"></div>
+      </section>
+      <footer>
+        <span></span><span>YOUR BEST: <b id="best">0</b></span
+        ><span></span>
+      </footer>
+    </main>
+    <script src="asset-config.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
